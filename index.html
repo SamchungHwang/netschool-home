@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netschool - 나만의 학습자료로 만드는 AI 학습 파트너</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Noto Sans KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        h1, h2, h3, h4, h5, h6 {
+             font-family: 'Noto Sans KR', 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #1D4ED8, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <!-- New Netschool Logo for Education -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-700">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0"/>
+                    <path d="M12 7v1"/><path d="M12 16v1"/>
+                    <path d="M16 12h1"/><path d="M8 12h1"/>
+                </svg>
+                <span class="text-2xl font-bold text-gray-900">Netschool</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-600 hover:text-blue-700 transition-colors">핵심 기능</a>
+                <a href="#use-cases" class="text-gray-600 hover:text-blue-700 transition-colors">교육 활용 사례</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-blue-700 transition-colors">작동 방식</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-800 transition-transform transform hover:scale-105 shadow">
+                데모 신청
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    나만의 학습 자료로 만드는<br><span class="gradient-text">AI 학습 파트너, Netschool</span>
+                </h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 mb-8">
+                    Netschool은 NotebookLM처럼 여러분의 강의노트, 교과서, 논문을 기반으로 질문에 답하고, 개념을 설명하며, 아이디어를 정리해주는 개인 맞춤형 AI 에이전트입니다.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#contact" class="bg-blue-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition-transform transform hover:scale-105 shadow-lg">
+                        무료 체험하기
+                    </a>
+                    <a href="#use-cases" class="bg-white text-gray-700 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors border border-gray-300">
+                        활용 사례 보기
+                    </a>
+                </div>
+                 <div class="mt-16 max-w-5xl mx-auto">
+                    <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200">
+                        <div class="bg-gray-100 px-4 py-2 border-b border-gray-200 flex items-center">
+                            <div class="flex space-x-1.5">
+                                <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                                <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 ml-4">Netschool AI - 유기화학 학습노트</p>
+                        </div>
+                        <img src="https://placehold.co/1200x600/DBEAFE/1E3A8A?text=%EB%82%98%EB%A7%8C%EC%9D%98+AI+%ED%95%99%EC%8A%B5+%ED%8C%8C%ED%8A%B8%EB%84%88" 
+                             alt="AI 학습 파트너 대시보드 예시"
+                             class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-blue-700 font-semibold">NotebookLM 스타일 핵심 기능</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">학습의 깊이를 더하는 AI 기술</h2>
+                    <p class="max-w-2xl mx-auto text-lg text-gray-600 mt-4">
+                        업로드한 자료 내에서만 정보를 찾아, 신뢰할 수 있는 학습이 가능합니다.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                        <div class="bg-blue-100 text-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="book-check"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">교과서 기반의 정확한 답변</h3>
+                        <p class="text-gray-600">AI가 인터넷을 검색하는 대신, 내가 올린 교과서, 강의자료, 필기노트(PDF, TXT 등) 내용만을 근거로 답변하여 '환각' 현상이 없습니다.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                        <div class="bg-blue-100 text-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="brain-circuit"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">AI 기반 학습 도우미</h3>
+                        <p class="text-gray-600">복잡한 개념을 쉽게 설명해주거나, 여러 자료의 내용을 종합하여 리포트 개요를 짜주고, 예상 문제를 만들어주는 등 다양한 학습 활동을 지원합니다.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                        <div class="bg-blue-100 text-blue-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">아이디어 탐색 및 정리</h3>
+                        <p class="text-gray-600">여러 논문이나 자료를 바탕으로 새로운 연구 아이디어를 탐색하고, 생각을 체계적으로 정리하여 창의적인 결과물을 만들도록 돕습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Use Cases Section -->
+        <section id="use-cases" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-blue-700 font-semibold">교육 현장에서의 활용</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">모두를 위한 맞춤형 학습 경험</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <div class="flex items-center mb-3">
+                            <i data-lucide="graduation-cap" class="w-8 h-8 text-blue-700 mr-3"></i>
+                            <h4 class="font-bold text-lg">학생</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm">시험 범위 자료를 넣고 핵심 요약, 예상 문제 풀이를 통해 복습 효율을 높이고, 과제에 필요한 자료조사와 리포트 작성을 빠르게 끝냅니다.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <div class="flex items-center mb-3">
+                            <i data-lucide="user-cog" class="w-8 h-8 text-blue-700 mr-3"></i>
+                             <h4 class="font-bold text-lg">교사 & 교수</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm">수업 계획안과 참고 자료를 기반으로 창의적인 수업 활동을 구상하고, 학생들의 예상 질문에 대한 답변을 미리 준비하여 수업의 질을 높입니다.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                         <div class="flex items-center mb-3">
+                            <i data-lucide="flask-conical" class="w-8 h-8 text-blue-700 mr-3"></i>
+                             <h4 class="font-bold text-lg">연구원</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm">수십 편의 논문을 한 번에 분석하여 선행 연구를 빠르게 파악하고, 연구 노트와 데이터를 기반으로 새로운 가설과 아이디어를 발견합니다.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                         <div class="flex items-center mb-3">
+                            <i data-lucide="book-open" class="w-8 h-8 text-blue-700 mr-3"></i>
+                            <h4 class="font-bold text-lg">평생 학습자</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm">관심 분야의 온라인 강의, 전자책 등을 넣고 나만의 지식 베이스를 구축하여, 필요할 때마다 핵심 내용을 빠르게 확인하고 학습합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works Section -->
+        <section id="how-it-works" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-blue-700 font-semibold">3단계로 시작하기</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">나만의 AI 학습 파트너 만들기</h2>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-200" style="transform: translateY(-50%);"></div>
+                    
+                    <div class="grid md:grid-cols-3 gap-16 relative">
+                        <div class="text-center">
+                            <div class="relative mb-4 inline-block">
+                                <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">1</div>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">학습 자료 업로드</h3>
+                            <p class="text-gray-600">AI 파트너가 학습할 강의 노트, PDF 교재, 논문 등 모든 자료를 안전하게 업로드합니다.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="relative mb-4 inline-block">
+                                <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">2</div>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">질문하고 탐색하기</h3>
+                            <p class="text-gray-600">자료에 대해 궁금한 점을 자유롭게 질문하고, 개념을 탐색하며 생각의 폭을 넓혀갑니다.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="relative mb-4 inline-block">
+                                <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">3</div>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">결과물 생성 및 활용</h3>
+                            <p class="text-gray-600">AI와의 대화 내용을 바탕으로 요약, 보고서, 스터디 가이드 등 원하는 결과물을 만들어 학습에 활용합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="bg-white">
+            <div class="container mx-auto px-6 py-20">
+                <div class="bg-blue-800 rounded-2xl p-10 md:p-16 text-center shadow-xl">
+                     <h2 class="text-3xl md:text-4xl font-bold text-white">
+                        학습의 새로운 기준, Netschool과 함께<br>당신의 잠재력을 깨워보세요.
+                    </h2>
+                    <p class="text-blue-200 mt-4 mb-8 max-w-2xl mx-auto">
+                        지금 바로 나만의 AI 학습 파트너를 무료로 경험하고, 더 스마트하게 공부하는 방법을 찾아보세요.
+                    </p>
+                    <a href="mailto:contact@netschool.ai" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-transform transform hover:scale-105 shadow-lg">
+                        AI 학습 파트너 무료 체험
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold">Netschool</h4>
+                    <p class="text-gray-400 mt-2">모두를 위한 개인 맞춤형 AI 학습 솔루션</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold">바로가기</h4>
+                    <ul class="mt-2 space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">핵심 기능</a></li>
+                        <li><a href="#use-cases" class="text-gray-400 hover:text-white">교육 활용 사례</a></li>
+                         <li><a href="#how-it-works" class="text-gray-400 hover:text-white">작동 방식</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold">연락처</h4>
+                    <ul class="mt-2 space-y-2">
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="w-4 h-4 mr-2 text-gray-400"></i>
+                            <a href="mailto:contact@netschool.ai" class="text-gray-400 hover:text-white">contact@netschool.ai</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Netschool. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
